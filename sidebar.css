@@ -1,0 +1,136 @@
+.sidebar{
+position: fixed;
+top: 50px;
+left: 0;
+bottom: 0;
+width: 240px;
+background-color: #1a1d24;
+z-index: 100;
+color: white;
+font-family: Roobert, Arial;
+}
+
+.sidebar-text, .streamer-pic{
+    margin-left: 10px;
+}
+
+.streamer-pic{
+    width: 30px;
+}
+
+h2{
+    font-size: 18px;
+}
+
+h3{
+    font-size: 14px;
+}
+
+h4{
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.channels{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: 20px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.streamer-pic{
+    border-radius: 50%;
+    width: 50%;
+}
+
+.streamer{
+    grid-column-start: 2;
+    font-weight: bold;
+}
+
+.section{
+    grid-row-start: 2;
+    grid-column-start: 2;
+    margin-top: 0px;
+    color: gray;
+}
+
+.viewcount{
+    grid-column-start: 3;
+    position: relative;
+}
+
+.dot{
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    right: 55px;
+    top: 3px;
+}
+
+.channels:hover {
+    background-color: #3c3f43;
+    cursor: pointer;
+}
+
+.channels:hover .tooltip{
+    opacity: 1;
+}
+
+.tooltip{
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    background-color: #1a1d24;
+    color: white;
+    right: -225px;
+    transition: opacity 0.15s;
+    border-radius: 6px;
+    width: 200px;
+    padding: 10px;
+}
+
+#offline{
+    filter: grayscale(100%);
+}
+
+.show-more-button{
+    margin-top: 10px;
+    color: #721de0;
+    background-color: #1a1d24;
+    border-style:none;
+}
+
+.show-more-button:hover{
+    cursor: pointer;
+    text-decoration:underline;
+    opacity: 0.8;
+}
+
+.section{
+    white-space: nowrap;
+}
+
+@media(max-width: 1200px){
+    .channels{
+        width: 30px;   
+        margin-top: 10px;
+        margin-bottom: 15px;
+        margin-left: 2.5px;
+    }
+
+    .streamer, .section, .viewcount, .show-more-button, h2, h3, h4{
+        display: none;
+    }
+
+    .sidebar{
+        width: 50px;
+    }
+
+    body{
+        margin-left: 80px;
+    }
+}

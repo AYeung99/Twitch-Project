@@ -1,0 +1,177 @@
+.header{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #0f131a;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-color: black;
+    z-index: 100;
+    font-family: Roobert, Arial;
+}
+
+.left-section{
+    display: flex;
+    column-gap: 25px;
+}
+
+.following, .browse, .vertical, .twitch-button{
+    background-color: #0f131a;
+    border-style: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.twitch-button{
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.twitch-logo{
+    width: 30px;
+}
+
+.following{
+color: white;
+}
+
+.following:hover{
+    color: #A970FF;
+}
+
+.browse{
+color: #A970FF;
+border-bottom: solid;
+border-width: 2px;
+padding-bottom: 10px;
+margin-top: 10px;
+width: 65px;
+}
+
+.vertical{
+color: white;
+font-size: 20px;
+position: relative;
+padding: 0px 8px;
+}
+
+.vertical:hover{
+    background-color:#3c3f43;
+    border-radius: 6px;
+    padding: 0px 8px;
+   }
+
+.header-tooltip{
+    position: absolute;
+    background-color: white;
+    color: black;
+    border-radius: 6px;
+    padding: 6px;
+    font-size: 12px;
+    bottom: -25px;
+    right: -10px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.vertical:hover .header-tooltip{
+    opacity: 1;
+}
+
+.middle-section{
+    display: flex;
+    align-items: center;
+}
+
+.search{
+    background-color: #3c3f43;
+    border-radius: 6px;
+    width: 400px;
+    height: 34px;
+    color: white;
+}
+
+.search-button{
+    position: relative;
+    height: 34px;
+    background-color: #00000014;
+    border-style: none;
+    border-radius: 4px;
+    width: 30px;
+    height: 37px;
+    right: 35px;
+}
+
+.search-button:hover{
+    background-color: rgb(48, 48, 48);
+}
+
+.search::placeholder{
+    color: gray;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.search:focus{
+    outline: 2px solid #721de0;
+    background-color: black;
+}
+
+.search-icon{
+    position: absolute;
+    width: 30px;
+    color: white;
+    right: 0px;
+    top: 2px;
+    cursor: pointer;
+}
+
+.right-section{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    flex-shrink: 0;
+}
+
+.my-profile{
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.profile-container{
+    position: relative;
+}
+
+.notifications{
+    position: absolute;
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 12px;
+    top: -5px;
+    right: 5px;
+}
+
+.bits{
+    background-color: rgb(32, 32, 32);
+    border-style: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bits:hover{
+    background-color:rgb(48, 48, 48);
+}
+

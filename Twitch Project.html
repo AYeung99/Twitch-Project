@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitch Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="body.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="sidebar.css"/>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <button class="twitch-button">
+          <img class="twitch-logo" src="/Test Folder/Twitch Project/Icons/twitch-svgrepo-com.svg">
+        </button>
+        <button class="following">Following</button>
+        <button class="browse">Browse</button>
+        <button class="vertical">
+          &#8942;
+          <div class="header-tooltip">More</div>
+        </button>
+      </div>
+
+      <div class="middle-section">
+        <input class="search" type="text" placeholder="Search">
+        <button class="search-button">
+        <img class="search-icon" src="/Test Folder/Twitch Project/Icons/VisualEditor_-_Icon_-_Search-big_-_white.svg">
+        </button>
+      </div>
+
+      <div class="right-section">
+      <button class="bits">Get Bits</button>
+      <div class="profile-container">
+      <img class="my-profile" src="/Test Folder/Twitch Project/Icons/ebb84563-db81-4b9c-8940-64ed33ccfc7b-profile_image-70x70.png">
+      <div class="notifications">
+        72
+      </div>
+    </div>
+      </div>
+    </header>
+
+    <nav class="sidebar">
+      <div class="for-you">
+        <h2 class="sidebar-text">
+            For You
+        </h2>
+      </div>
+      <div class="followed-channels">
+        <h3 class="sidebar-text">
+            FOLLOWED CHANNELS
+        </h3>
+      </div>
+      <div class="channels">
+            <img class="streamer-pic"src="/Test Folder/Twitch Project/Profile Pictures/VALORANT.png"/>
+        <div class="streamer">VALORANT</div>
+        <div class="section">VALORANT</div>
+        <div class="viewcount">56.5K
+            <span class="dot"></span>
+        </div>
+        <div class="tooltip">C9 vs. PRX VCT LOCK//IN- Alpha Bracket Day 2</div>
+      </div>
+
+      <div class="channels">
+        <img class="streamer-pic"src="/Test Folder/Twitch Project/Profile Pictures/supertf.jpeg"/>
+    <div class="streamer">supertf</div>
+    <div class="section">Overwatch 2</div>
+    <div class="viewcount">3.4K
+        <span class="dot"></span>
+    </div>
+    <div class="tooltip">[DROPS ENABLED] extensive and dominantly exerting...</div>
+  </div>
+
+   <div class="channels">
+        <img class="streamer-pic"src="/Test Folder/Twitch Project/Profile Pictures/Azndragon04.png"/>
+    <div class="streamer">Azndragon04</div>
+    <div class="section">VALORANT</div>
+    <div class="viewcount">15
+        <span class="dot"></span>
+    </div>
+    <div class="tooltip">finally escaping silver after 6 acts</div>
+  </div>
+
+  <div class="channels">
+    <img class="streamer-pic"src="/Test Folder/Twitch Project/Profile Pictures/dough.png"/>
+<div class="streamer">Doughboy</div>
+<div class="section">Tekken 7</div>
+<div class="viewcount">27
+    <span class="dot"></span>
+</div>
+<div class="tooltip">best steve player in georgia cooking it up</div>
+</div>
+
+<div class="channels">
+  <img class="streamer-pic"src="/Test Folder/Twitch Project/Profile Pictures/ui.png"/>
+<div class="streamer">quiMarvelSnap</div>
+<div class="section">Marvel Snap</div>
+<div class="viewcount">274
+  <span class="dot"></span>
+</div>
+<div class="tooltip">[Diamond 1] It's time to SNAP! $16,200 spent so far !deck</div>
+</div>
+
+<div class="channels">
+  <img class="streamer-pic"src="/Test Folder/Twitch Project/Profile Pictures/Vision.png"/>
+<div class="streamer">hiansav12</div>
+<div class="section">Escape from Ta...</div>
+<div class="viewcount">164
+  <span class="dot"></span>
+</div>
+<div class="tooltip">chill scav gameplay in streets. korea trip next week</div>
+</div>
+
+<div class="channels">
+  <img class="streamer-pic"src="/Test Folder/Twitch Project/Profile Pictures/Girth_e.png"/>
+<div class="streamer">Girth_e</div>
+<div class="section">VALORANT</div>
+<div class="viewcount">1.2K
+  <span class="dot"></span>
+</div>
+<div class="tooltip">RADIANT GRIND !coaching</div>
+</div>
+
+<div class="channels">
+  <img class="streamer-pic"src="/Test Folder/Twitch Project/Profile Pictures/Swarm.png"/>
+<div class="streamer">Swarm</div>
+<div class="section">Dead by Daylight</div>
+<div class="viewcount">462
+  <span class="dot"></span>
+</div>
+<div class="tooltip">Searching for a Valentine in the Fog | !socials !faq
+</div>
+</div>
+
+<div class="channels">
+  <img class="streamer-pic"src="/Test Folder/Twitch Project/Profile Pictures/ChaoticPerfection.png"/>
+<div class="streamer">ChaoticPerfec...</div>
+<div class="section">Tekken 7</div>
+<div class="viewcount">21
+  <span class="dot"></span>
+</div>
+<div class="tooltip">Practicing Kasumi and climbing the ladder !yt</div>
+</div>
+
+<div class="channels">
+  <img class="streamer-pic" id="offline" src="/Test Folder/Twitch Project/Profile Pictures/Otzdarva.png"/>
+<div class="streamer">Otzdarva</div>
+<div class="section"></div>
+<div class="viewcount">Offline
+</div>
+<div class="tooltip">Offline</div>
+</div>
+
+<div class="channels">
+  <img class="streamer-pic" id="offline" src="/Test Folder/Twitch Project/Profile Pictures/cru5h.png"/>
+<div class="streamer">cru5h</div>
+<div class="section"></div>
+<div class="viewcount">Offline
+</div>
+<div class="tooltip">Offline</div>
+</div>
+
+      <div class="show-more">
+        <button class="show-more-button">
+          Show More
+        </button>
+      </div>
+      <div class="recommended-channels">
+        <h4 class="sidebar-text">
+          RECOMMENDED CHANNELS
+        </h4>
+
+        <div class="channels">
+          <img class="streamer-pic" src="/Test Folder/Twitch Project/Profile Pictures/Rainbow Six Siege.png"/>
+        <div class="streamer">Rainbow6</div>
+        <div class="section">Tom Clancy's: R...</div>
+        <div class="viewcount">33.7K
+          <span class="dot"></span>
+        </div>
+        <div class="tooltip">LOS + oNe VS Astralis // Six Invitational 2023-Playoffs</div>
+        </div>
+
+        <div class="channels">
+          <img class="streamer-pic" src="/Test Folder/Twitch Project/Profile Pictures/Capcom.png"/>
+        <div class="streamer">CapcomFight...</div>
+        <div class="section">Street Fighter V</div>
+        <div class="viewcount">8K
+          <span class="dot"></span>
+        </div>
+        <div class="tooltip">Capcom Cup IX - Groups - Day 1</div>
+        </div>
+
+        <div class="channels">
+          <img class="streamer-pic" src="/Test Folder/Twitch Project/Profile Pictures/OhTofu.png"/>
+        <div class="streamer">OhTofu</div>
+        <div class="section">Dead by Daylight</div>
+        <div class="viewcount">8K
+          <span class="dot"></span>
+        </div>
+        <div class="tooltip">10K+ HOURS TURBO NERD !rok #ad</div>
+        </div>
+
+
+        <div class="channels">
+          <img class="streamer-pic" src="/Test Folder/Twitch Project/Profile Pictures/AznVasions.png"/>
+        <div class="streamer">AznVasions</div>
+        <div class="section">Warframe</div>
+        <div class="viewcount">66
+          <span class="dot"></span>
+        </div>
+        <div class="tooltip">[Co-working] !Citrine Tomorrow! Happy Heart Day~</div>
+        </div>
+
+      </div>
+      <div class="show-more">
+        <button class="show-more-button">
+          Show More
+        </button>
+      </div>
+    </nav>
+
+    <h1>Browse</h1>
+    <div class="cards">
+      <div class="games-div">
+        <button class="button">
+          Games
+          <img
+            class="icon"
+            src="/Test Folder/Twitch Project/Icons/gaming-e9019587744b56b11b43.svg"
+          />
+        </button>
+      </div>
+
+      <div class="IRL-div">
+        <button class="button">
+          IRL
+          <img
+            class="icon"
+            src="/Test Folder/Twitch Project/Icons/irl-baa32e8e64a6974282c0.svg"
+          />
+        </button>
+      </div>
+
+      <div class="music-div">
+        <button class="button">
+          Music
+          <img
+            class="icon"
+            src="/Test Folder/Twitch Project/Icons/music-5fb4595a30d04d991e24.svg"
+          />
+        </button>
+      </div>
+
+      <div class="esports-div">
+        <button class="button">
+          Esports
+          <img
+            class="icon"
+            src="/Test Folder/Twitch Project/Icons/esports-7a078acca57531d11e29.svg"
+          />
+        </button>
+      </div>
+
+      <div class="creative-div">
+        <button class="button">
+          Creative
+          <img
+            class="icon"
+            src="/Test Folder/Twitch Project/Icons/creative-6423fb5fbcf31fadee38.svg"
+          />
+        </button>
+      </div>
+    </div>
+    <div class="layout">
+      <div class="layout-layer1">
+        <button class="categories">Categories</button>
+        <button class="live-channels">Live Channels</button>
+      </div>
+      <div class="layout-left">
+        <p class="layout-text">
+          <strong>Filter by Tag</strong>
+          <input
+            class="category-searchbox"
+            type="text"
+            placeholder="Search Category Tags"
+          />
+        </p>
+      </div>
+
+      <div class="layout-right">
+        <p class="layout-text">
+          <strong>Sort by</strong>
+        </p>
+        <select class="dropdown">
+          <option>Viewers (High to Low)</option>
+          <option>Recommended For You</option>
+        </select>
+      </div>
+    </div>
+
+    <main>
+      <div class="site-grid">
+        <div class="category-grid">
+          <div class="thumbnail-div">
+            <img
+              class="thumbnail"
+              src="/Test Folder/Twitch Project/Thumbnails/Chatting.jpg"
+            />
+          </div>
+          <div class="info-div">
+            <p class="category-name"><strong>Just Chatting</strong></p>
+            <p class="viewers">572K viewers</p>
+            <div class="tags-div">
+              <button class="tag">IRL</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="category-grid">
+          <div class="thumbnail-div">
+            <img
+              class="thumbnail"
+              src="/Test Folder/Twitch Project/Thumbnails/VALORANT.jpg"
+            />
+          </div>
+          <div class="info-div">
+            <p class="category-name"><strong>VALORANT</strong></p>
+            <p class="viewers">416K viewers</p>
+            <div class="tags-div">
+              <button class="tag">Shooter</button>
+              <button class="tag">FPS</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="category-grid">
+          <div class="thumbnail-div">
+            <img class="thumbnail" src="/Test Folder/Twitch Project/Thumbnails/GTA.jpg" />
+          </div>
+          <div class="info-div">
+            <p class="category-name"><strong>Grand Theft Auto V</strong></p>
+            <p class="viewers">209K viewers</p>
+            <div class="tags-div">
+              <button class="tag">Adventure Game</button>
+              <button class="tag">FPS</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="category-grid">
+          <div class="thumbnail-div">
+            <img
+              class="thumbnail"
+              src="/Test Folder/Twitch Project/Thumbnails/League of Legends.jpg"
+            />
+          </div>
+          <div class="info-div">
+            <p class="category-name"><strong>League of Legends</strong></p>
+            <p class="viewers">178K viewers</p>
+            <div class="tags-div">
+              <button class="tag">MOBA</button>
+              <button class="tag">Action</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="category-grid">
+          <div class="thumbnail-div">
+            <img
+              class="thumbnail"
+              src="/Test Folder/Twitch Project/Thumbnails/Hogwarts Legacy.jpg"
+            />
+            <p class="new-tag">NEW</p>
+          </div>
+          <div class="info-div">
+            <p class="category-name"><strong>Hogwarts Legacy</strong></p>
+            <p class="viewers">173K viewers</p>
+            <div class="tags-div">
+              <button class="tag">RPG</button>
+              <button class="tag">Adventure Game</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="category-grid">
+          <div class="thumbnail-div">
+            <img
+              class="thumbnail"
+              src="/Test Folder/Twitch Project/Thumbnails/Apex Legends.jpg"
+            />
+          </div>
+          <div class="info-div">
+            <p class="category-name"><strong>Apex Legends</strong></p>
+            <p class="viewers">137K viewers</p>
+            <div class="tags-div">
+              <button class="tag">FPS</button>
+              <button class="tag">Shooter</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="category-grid">
+          <div class="thumbnail-div">
+            <img
+              class="thumbnail"
+              src="/Test Folder/Twitch Project/Thumbnails/Rainbow Six Siege.jpg"
+            />
+          </div>
+          <div class="info-div">
+            <p class="category-name">
+              <strong>Tom Clancy's: Rain...</strong>
+            </p>
+            <p class="viewers">122K viewers</p>
+            <div class="tags-div">
+              <button class="tag">FPS</button>
+              <button class="tag">Shooter</button>
+            </div>
+          </div>
+        </div>
+
+          <div class="category-grid">
+            <div class="thumbnail-div">
+              <img
+                class="thumbnail"
+                src="/Test Folder/Twitch Project/Thumbnails/CSGO.jpg"
+              />
+            </div>
+            <div class="info-div">
+              <p class="category-name">
+                <strong>Counter-Strike: Glo...</strong>
+              </p>
+              <p class="viewers">67.4K viewers</p>
+              <div class="tags-div">
+                <button class="tag">FPS</button>
+                <button class="tag">Shooter</button>
+              </div>
+            </div>
+        </div>
+
+        <div class="category-grid">
+            <div class="thumbnail-div">
+              <img
+                class="thumbnail"
+                src="/Test Folder/Twitch Project/Thumbnails/Minecraft.jpg"
+              />
+            </div>
+            <div class="info-div">
+              <p class="category-name">
+                <strong>Minecraft</strong>
+              </p>
+              <p class="viewers">60.2K viewers</p>
+              <div class="tags-div">
+                <button class="tag">Adventure Game</button>
+              </div>
+            </div>
+            </div>
+
+            <div class="category-grid">
+                <div class="thumbnail-div">
+                  <img
+                    class="thumbnail"
+                    src="/Test Folder/Twitch Project/Thumbnails/Dark and Darker.jpg"
+                  />
+                  <p class="new-tag">NEW</p>
+                </div>
+                <div class="info-div">
+                  <p class="category-name">
+                    <strong>Dark and Darker</strong>
+                  </p>
+                  <p class="viewers">59.6K viewers</p>
+                  <div class="tags-div">
+                    <button class="tag">FPS</button>
+                    <button class="tag">Fighting</button>
+                  </div>
+                </div>      
+            </div>    
+
+            <div class="category-grid">
+                <div class="thumbnail-div">
+                  <img
+                    class="thumbnail"
+                    src="/Test Folder/Twitch Project/Thumbnails/Fortnite.jpg"
+                  />
+                </div>
+                <div class="info-div">
+                  <p class="category-name">
+                    <strong>Fortnite</strong>
+                  </p>
+                  <p class="viewers">57.3K viewers</p>
+                  <div class="tags-div">
+                    <button class="tag">Shooter</button>
+                    <button class="tag">Action</button>
+                  </div>
+                </div>      
+            </div>    
+
+            <div class="category-grid">
+                <div class="thumbnail-div">
+                  <img
+                    class="thumbnail"
+                    src="/Test Folder/Twitch Project/Thumbnails/Overwatch.jpg"
+                  />
+                </div>
+                <div class="info-div">
+                  <p class="category-name">
+                    <strong>Overwatch</strong>
+                  </p>
+                  <p class="viewers">39K viewers</p>
+                  <div class="tags-div">
+                    <button class="tag">FPS</button>
+                    <button class="tag">Shooter</button>
+                  </div>
+                </div>      
+            </div> 
+
+            <div class="category-grid">
+                <div class="thumbnail-div">
+                  <img
+                    class="thumbnail"
+                    src="/Test Folder/Twitch Project/Thumbnails/Warzone.jpg"
+                  />
+                </div>
+                <div class="info-div">
+                  <p class="category-name">
+                    <strong>Call of Duty</strong>
+                  </p>
+                  <p class="viewers">34.9K viewers</p>
+                  <div class="tags-div">
+                    <button class="tag">FPS</button>
+                    <button class="tag">Shooter</button>
+                  </div>
+                </div>      
+            </div> 
+
+
+            <div class="category-grid">
+                <div class="thumbnail-div">
+                  <img
+                    class="thumbnail"
+                    src="/Test Folder/Twitch Project/Thumbnails/Dota 2.jpg"
+                  />
+                </div>
+                <div class="info-div">
+                  <p class="category-name">
+                    <strong>Dota 2</strong>
+                  </p>
+                  <p class="viewers">33.2K viewers</p>
+                  <div class="tags-div">
+                    <button class="tag">MOBA</button>
+                    <button class="tag">Action</button>
+                  </div>
+                </div>      
+            </div> 
+
+            <div class="category-grid">
+                <div class="thumbnail-div">
+                  <img
+                    class="thumbnail"
+                    src="/Test Folder/Twitch Project/Thumbnails/World of Warcraft.jpg"
+                  />
+                </div>
+                <div class="info-div">
+                  <p class="category-name">
+                    <strong>World of Warcraft</strong>
+                  </p>
+                  <p class="viewers">32.5K viewers</p>
+                  <div class="tags-div">
+                    <button class="tag">RPG</button>
+                    <button class="tag">Adventure Game</button>
+                  </div>
+                </div>      
+            </div> 
+
+            <div class="category-grid">
+                <div class="thumbnail-div">
+                  <img
+                    class="thumbnail"
+                    src="/Test Folder/Twitch Project/Thumbnails/Escape from Tarkov.jpg"
+                  />
+                </div>
+                <div class="info-div">
+                  <p class="category-name">
+                    <strong>Escape from Tarkov</strong>
+                  </p>
+                  <p class="viewers">31.2K viewers</p>
+                  <div class="tags-div">
+                    <button class="tag">Simulation</button>
+                    <button class="tag">FPS</button>
+                  </div>
+                </div>      
+            </div> 
+
+            <div class="category-grid">
+                <div class="thumbnail-div">
+                  <img
+                    class="thumbnail"
+                    src="/Test Folder/Twitch Project/Thumbnails/Dead by Daylight.jpg"
+                  />
+                </div>
+                <div class="info-div">
+                  <p class="category-name">
+                    <strong>Dead by Daylight</strong>
+                  </p>
+                  <p class="viewers">30.6K viewers</p>
+                  <div class="tags-div">
+                    <button class="tag">Action</button>
+                    <button class="tag">Horror</button>
+                  </div>
+                </div>      
+            </div> 
+
+            <div class="category-grid">
+                <div class="thumbnail-div">
+                  <img
+                    class="thumbnail"
+                    src="/Test Folder/Twitch Project/Thumbnails/Street Fighter V.jpg"
+                  />
+                </div>
+                <div class="info-div">
+                  <p class="category-name">
+                    <strong>Street Fighter V</strong>
+                  </p>
+                  <p class="viewers">28.6K viewers</p>
+                  <div class="tags-div">
+                    <button class="tag">Fighting</button>
+                    <button class="tag">Action</button>
+                  </div>
+                </div>                  
+            </div> 
+
+            <div class="category-grid">
+              <div class="thumbnail-div">
+                <img
+                  class="thumbnail"
+                  src="/Test Folder/Twitch Project/Thumbnails/Music.jpg"
+                />
+              </div>
+              <div class="info-div">
+                <p class="category-name">
+                  <strong>Music</strong>
+                </p>
+                <p class="viewers">27.5K viewers</p>
+                <div class="tags-div">
+                  <button class="tag">IRL</button>
+                  <button class="tag">Creative</button>
+                </div>
+              </div>  
+              </div>
+
+              <div class="category-grid">
+                <div class="thumbnail-div">
+                  <img
+                    class="thumbnail"
+                    src="/Test Folder/Twitch Project/Thumbnails/Sports.jpg"
+                  />
+                </div>
+                <div class="info-div">
+                  <p class="category-name">
+                    <strong>Sports</strong>
+                  </p>
+                  <p class="viewers">26.4K viewers</p>
+                  <div class="tags-div">
+                    <button class="tag">IRL</button>
+                  </div>
+                </div>  
+              </div>
+
+              <div class="category-grid">
+                <div class="thumbnail-div">
+                  <img
+                    class="thumbnail"
+                    src="/Test Folder/Twitch Project/Thumbnails/Elden Ring.jpg"
+                  />
+                </div>
+                <div class="info-div">
+                  <p class="category-name">
+                    <strong>ELDEN RING</strong>
+                  </p>
+                  <p class="viewers">25.3K viewers</p>
+                  <div class="tags-div">
+                    <button class="tag">RPG</button>
+                    <button class="tag">Action</button>
+                  </div>
+                </div>  
+              </div>
+
+              <div class="category-grid">
+                <div class="thumbnail-div">
+                  <img
+                    class="thumbnail"
+                    src="/Test Folder/Twitch Project/Thumbnails/Wild Hearts.jpg"
+                  />
+                  <p class="new-tag">NEW</p>
+                </div>
+                <div class="info-div">
+                  <p class="category-name">
+                    <strong>Wild Hearts</strong>
+                  </p>
+                  <p class="viewers">25.1K viewers</p>
+                  <div class="tags-div">
+                    <button class="tag">Adventure Game</button>
+                  </div>
+                </div>  
+              </div>
+
+              <div class="category-grid">
+                <div class="thumbnail-div">
+                  <img
+                    class="thumbnail"
+                    src="/Test Folder/Twitch Project/Thumbnails/Escape The Backrooms.jpg"
+                  />
+                </div>
+                <div class="info-div">
+                  <p class="category-name">
+                    <strong>Escape the Backroo...</strong>
+                  </p>
+                  <p class="viewers">23.1K viewers</p>
+                  <div class="tags-div">
+                    <button class="tag">Indie Game</button>
+                  </div>
+                </div>  
+              </div>
+
+              <div class="category-grid">
+                <div class="thumbnail-div">
+                  <img
+                    class="thumbnail"
+                    src="/Test Folder/Twitch Project/Thumbnails/Lost Ark.jpg"
+                  />
+                </div>
+                <div class="info-div">
+                  <p class="category-name">
+                    <strong>Lost Ark</strong>
+                  </p>
+                  <p class="viewers">22.3K viewers</p>
+                  <div class="tags-div">
+                    <button class="tag">RPG</button>
+                    <button class="tag">Action</button>
+                    <button class="tag">MMO</button>
+                  </div>
+                </div>  
+              </div>
+
+              <div class="category-grid">
+                <div class="thumbnail-div">
+                  <img
+                    class="thumbnail"
+                    src="/Test Folder/Twitch Project/Thumbnails/Wild West Dynasty.jpg"
+                  />
+                </div>
+                <div class="info-div">
+                  <p class="category-name">
+                    <strong>Wild West Dynasty</strong>
+                  </p>
+                  <p class="viewers">21.7K viewers</p>
+                  <div class="tags-div">
+                    <button class="tag">Simulation</button>
+                  </div>
+                </div>  
+              </div>
+
+              <div class="category-grid">
+                <div class="thumbnail-div">
+                  <img
+                    class="thumbnail"
+                    src="/Test Folder/Twitch Project/Thumbnails/FIFA.jpg"
+                  />
+                </div>
+                <div class="info-div">
+                  <p class="category-name">
+                    <strong>FIFA 23</strong>
+                  </p>
+                  <p class="viewers">23.5K viewers</p>
+                  <div class="tags-div">
+                    <button class="tag">Sports Game</button>
+                  </div>
+                </div>  
+              </div>
+
+              <div class="category-grid">
+                <div class="thumbnail-div">
+                  <img
+                    class="thumbnail"
+                    src="/Test Folder/Twitch Project/Thumbnails/TFT.jpg"
+                  />
+                </div>
+                <div class="info-div">
+                  <p class="category-name">
+                    <strong>Teamfight Tactics</strong>
+                  </p>
+                  <p class="viewers">18.8K viewers</p>
+                  <div class="tags-div">
+                    <button class="tag">Strategy</button>
+                  </div>
+                </div>  
+              </div>   
+
+    </main>
+  </body>
+</html>
